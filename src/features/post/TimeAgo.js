@@ -8,8 +8,8 @@ const TimeAgo = ({ timestamp }) => {
         timeAgo=`${timePeriod} ago`
     }
   return (
-      <span title={timestamp}>
-          &nbsp; <i>{ timeAgo}</i>
+    <span title={timestamp}>
+      &nbsp;<i>{timeAgo}</i>
     </span>
   )
 }
