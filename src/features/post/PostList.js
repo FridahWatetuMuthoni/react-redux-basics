@@ -30,8 +30,7 @@ const PostList = () => {
     { post.content.substring(0,100)}...
     </p>
     <ReactionButtons post={post}/>
-    <Link to="/" class="card-link">Update</Link>
-    <Link to="/" class="card-link">Delete</Link>
+    <Link to={`/post/${post.id}`} className="card-link">Visit Post</Link>
   </div>
 </div>
                   )
