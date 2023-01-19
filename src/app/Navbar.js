@@ -13,7 +13,6 @@ const Navbar = () => {
       <div className="navbar-nav mx-auto ">
         <Link className="nav-link" to='posts'>Posts</Link>
         <Link className="nav-link" to='/create'>Create Post</Link>
-        <Link className="nav-link" to='/'>Home</Link>
       </div>
     </div>
   </div>
