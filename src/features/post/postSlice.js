@@ -70,6 +70,8 @@ const postsSlice= createSlice({
          },
         postDelete: (state, action) => {
             const id = action.payload
+            //arr.splice(position,howmany,items)
+            //arr.splice(position(index of the post),how many items to remove)
             state.splice(state.findIndex((post)=> post.id = id),1)
         }
     }
