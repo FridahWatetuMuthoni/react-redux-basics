@@ -71,7 +71,10 @@ const postsSlice= createSlice({
         postDelete: (state, action) => {
             const id = action.payload
             //arr.splice(position,howmany,items)
-            //arr.splice(position(index of the post),how many items to remove)
+            /* to be able to mutate the state we need to remove the item using the splice method
+            The splice method takes in the position of of the element that you want to remove and how many elements to remove
+                    arr.splice(position(index of the post),how many items to remove)
+             */
             state.splice(state.findIndex((post)=> post.id = id),1)
         }
     }
